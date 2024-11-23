@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba18d25d5d4ca1740b7f067bd788a1fe, type: 3}
   m_Name: SaveLoadSystemSettings
   m_EditorClassIdentifier: 
-  useDefaultSaveFilePath: 1
+  useDefaultSaveFilePath: 0
   saveFilePath: 
-  saveLoadFormat: 0
+  saveLoadFormat: 2
   customizeSuffix: 0
   customizedSuffix: .dat
