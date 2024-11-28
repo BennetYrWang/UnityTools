@@ -10,7 +10,7 @@ namespace Modules.SaveLoadSystem
 {
     class Settings : ScriptableObject
     {
-        public const string settingPath = "Assets/Editor/Module/SaveLoadSystemSettings.asset";
+        public const string settingPath = "Assets/Editor/Modules/SaveLoadSystemSettings.asset";
         public const string defaultBinaryFileSuffix = ".dat";
 
         [SerializeField] private bool useDefaultSaveFilePath = true;
