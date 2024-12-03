@@ -7,7 +7,7 @@ public class Tester : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var sth = Modules.SaveLoadSystem.Settings.GetOrCreateSettings();
+        var sth = MyModule.SaveLoadSystem.Settings.GetOrCreateSettings();
         print(sth.GetSaveFilePath());
     }
 
