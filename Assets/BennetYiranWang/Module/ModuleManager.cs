@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace BennetYiranWang.Module
@@ -18,7 +19,8 @@ namespace BennetYiranWang.Module
                     lock (Lock)
                     {
                         if (_instance != null) return _instance;
-                        _instance = new GameObject().AddComponent<ModuleManager>();
+                        _instance = new GameObject(ModuleManagerSettings.LoadOrCreateSettings().GetSettingsData().runTimeGeneratedGameObjectName)
+                            .AddComponent<ModuleManager>();
                         _instance.Init(true);
                     }
                 }
